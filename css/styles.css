@@ -66,6 +66,7 @@ letter-spacing: 0.03;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08) ;
 }
 
 .header-container {
@@ -89,6 +90,7 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02; 
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-nav {
@@ -98,7 +100,7 @@ letter-spacing: 0.02;
 
 .page-nav-list {
     display: flex;
-    gap: 40px;
+    gap: 40px; 
 }
 
 .page-nav-colum {
@@ -112,6 +114,22 @@ letter-spacing: 0.02;
 .page-list-link:hover, 
 .page-list-link:focus {
 color: #404bbf;
+}
+
+.carrent {
+position: relative;
+color: #404BBF;
+}
+
+.carrent::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
 }
 
 .address {
@@ -135,6 +153,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02; 
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -144,7 +163,6 @@ letter-spacing: 0.02;
 
 .section{
     padding:188px 0;
-    background-color: #2E2F42;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7)0, rgba(46, 47, 66, 0.7)), url(../images/img0.jpg);
     background-repeat: no-repeat;
@@ -195,6 +213,7 @@ border: none;
 border-radius: 4px;
 cursor: pointer;
 margin: 0 auto;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .button:hover,
